@@ -1,0 +1,46 @@
+language: bemba
+language_code: bem
+dataset_path: data/bemba
+output_dir: outputs/bemba
+
+model:
+  base_model: facebook/wav2vec2-base
+  pretrained_model_name: facebook/wav2vec2-base
+  attention_dropout: 0.1
+  hidden_dropout: 0.1
+  feat_proj_dropout: 0.0
+  mask_time_prob: 0.05
+  layerdrop: 0.1
+  ctc_loss_reduction: mean
+  pad_token_id: 0
+
+training:
+  num_train_epochs: 30
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 8
+  gradient_accumulation_steps: 2
+  learning_rate: 3.0e-4
+  warmup_steps: 500
+  weight_decay: 0.005
+  evaluation_strategy: steps
+  save_strategy: steps
+  eval_steps: 400
+  save_steps: 400
+  logging_steps: 100
+  load_best_model_at_end: true
+  metric_for_best_model: wer
+  greater_is_better: false
+  save_total_limit: 2
+  fp16: true
+  dataloader_num_workers: 4
+  seed: 42
+
+audio:
+  sampling_rate: 16000
+  max_duration_seconds: 20.0
+  min_duration_seconds: 0.5
+
+data_split:
+  train: 0.8
+  validation: 0.1
+  test: 0.1
