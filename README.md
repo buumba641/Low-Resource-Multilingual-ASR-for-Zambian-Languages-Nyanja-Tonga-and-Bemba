@@ -10,7 +10,7 @@
 
 > **Low-Resource Automatic Speech Recognition for Zambian Languages: A Comparative Analysis of Pre-Trained Models on Bemba, Nyanja, and Tonga**
 
-This repository contains Jupyter notebooks for **monolingual Automatic Speech Recognition (ASR)** on three low-resource Zambian languages — **Bemba**, **Nyanja**, and **Tonga**. Pre-trained speech models are fine-tuned on the Zambezi Voice / BembaSpeech corpora and evaluated with **Word Error Rate (WER)** and **Character Error Rate (CER)**.
+This repository contains Jupyter notebooks for **monolingual Automatic Speech Recognition (ASR)** on three low-resource Zambian languages — **Bemba**, **Nyanja**, and **Tonga**. Pre-trained speech models are fine-tuned on the Zambezi Voice and evaluated with **Word Error Rate (WER)** and **Character Error Rate (CER)**.
 
 ---
 
