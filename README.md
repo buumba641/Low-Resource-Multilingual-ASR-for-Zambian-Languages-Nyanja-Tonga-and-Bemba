@@ -99,7 +99,6 @@ Results (WER/CER tables, plots, and observations) will be added/updated as exper
 ## Ethics, Privacy, and Licensing
 - Only public/anonymized datasets are used (primary: Zambezi Voice)
 - No user audio is collected in this notebooks-only repository
-- Zambezi Voice must be used with full attribution and according to its license terms
 
 ---
 
